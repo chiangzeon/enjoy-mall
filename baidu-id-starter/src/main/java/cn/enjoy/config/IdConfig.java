@@ -37,6 +37,11 @@ public class IdConfig {
         return defaultUidGenerator;
     }
 
+    /**
+     *
+     * @param disposableWorkerIdAssigner
+     * @return
+     */
     @Bean(value ="cachedUidGenerator")
     public CachedUidGenerator initCachedUidGenerator(DisposableWorkerIdAssigner disposableWorkerIdAssigner){
         CachedUidGenerator cachedUidGenerator = new CachedUidGenerator();
