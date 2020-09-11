@@ -36,12 +36,7 @@ public class IdConfig {
         defaultUidGenerator.setEpochStr(LocalDate.now().format( DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         return defaultUidGenerator;
     }
-
-    /**
-     *
-     * @param disposableWorkerIdAssigner
-     * @return
-     */
+    
     @Bean(value ="cachedUidGenerator")
     public CachedUidGenerator initCachedUidGenerator(DisposableWorkerIdAssigner disposableWorkerIdAssigner){
         CachedUidGenerator cachedUidGenerator = new CachedUidGenerator();
