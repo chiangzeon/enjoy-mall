@@ -34,7 +34,7 @@ public class IdConfig {
         defaultUidGenerator.setWorkerBits(21);
         defaultUidGenerator.setSeqBits(13);
         defaultUidGenerator.setEpochStr(LocalDate.now().format( DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-        return defaultUidGenerator; 
+        return defaultUidGenerator;
     }
 
     @Bean(value ="cachedUidGenerator")
